@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1528285684 source:/home/xiaohong/Projects/game_tilemap/src/Camera.cpp
+	"Camera.h"
+
+1528285684 /home/xiaohong/Projects/game_tilemap/include/Camera.h
+
+1528285661 source:/home/xiaohong/Projects/game_tilemap/src/Game.cpp
+	"Game.h"
+
+1528285661 /home/xiaohong/Projects/game_tilemap/include/Game.h
+
+1528285109 source:/home/xiaohong/Projects/game_tilemap/src/Map.cpp
+	"Map.h"
+
+1528374170 /home/xiaohong/Projects/game_tilemap/include/Map.h
+	<vector>
+	<string>
+	"Tile.h"
+
+1528373906 /home/xiaohong/Projects/game_tilemap/include/Tile.h
+
