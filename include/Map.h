@@ -18,6 +18,7 @@ class Map
 
     private:
         std::vector<Tile> tile_list;
+        SDL_Texture* texture;
 };
 
 #endif // MAP_H
