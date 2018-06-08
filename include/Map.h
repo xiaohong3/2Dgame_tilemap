@@ -9,15 +9,19 @@
 class Map
 {
     public:
-        Map();
+        Map(std::string file);
+        Map(std::string file, int cols, int rows, int tsize);
         virtual ~Map();
-        bool load(std::string file);
-        void render(SDL_Renderer* renderer);
+        bool on_load(std::string file, SDL_Renderer* renderer);
+        void on_render(SDL_Renderer* renderer);
 
     protected:
 
     private:
         std::vector<Tile> tile_list;
+        int cols;
+        int rows;
+        int tsize;
         SDL_Texture* texture;
 };
 

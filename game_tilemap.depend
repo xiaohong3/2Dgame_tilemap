@@ -4,19 +4,52 @@
 
 1528285684 /home/xiaohong/Projects/game_tilemap/include/Camera.h
 
-1528374198 source:/home/xiaohong/Projects/game_tilemap/src/Game.cpp
+1528460000 source:/home/xiaohong/Projects/game_tilemap/src/Game.cpp
 	"Game.h"
 
-1528285661 /home/xiaohong/Projects/game_tilemap/include/Game.h
+1528460410 /home/xiaohong/Projects/game_tilemap/include/Game.h
+	"SDL2/SDL.h"
+	"SDL2/SDL_image.h"
+	"Event.h"
+	"Define.h"
+	<iostream>
 
 1528285109 source:/home/xiaohong/Projects/game_tilemap/src/Map.cpp
 	"Map.h"
 
-1528376792 /home/xiaohong/Projects/game_tilemap/include/Map.h
+1528461532 /home/xiaohong/Projects/game_tilemap/include/Map.h
 	<vector>
 	<string>
 	"SDL2/SDL.h"
 	"Tile.h"
 
 1528373906 /home/xiaohong/Projects/game_tilemap/include/Tile.h
+
+1528460374 source:/home/xiaohong/Projects/game_tilemap/src/Game_Init.cpp
+	"Game.h"
+
+1528458175 source:/home/xiaohong/Projects/game_tilemap/src/TextureManager.cpp
+	"TextureManager.h"
+
+1528458167 /home/xiaohong/Projects/game_tilemap/include/TextureManager.h
+	"SDL2/SDL.h"
+	"SDL2/SDL_image.h"
+	<string>
+
+1528460571 source:/home/xiaohong/Projects/game_tilemap/src/Game_Cleanup.cpp
+	"Game.h"
+
+1528459772 /home/xiaohong/Projects/game_tilemap/include/Event.h
+	"SDL2/SDL.h"
+
+1528458675 source:/home/xiaohong/Projects/game_tilemap/src/Game_Loop.cpp
+	"Game.h"
+
+1528460496 source:/home/xiaohong/Projects/game_tilemap/src/Game_Render.cpp
+	"Game.h"
+
+1528459795 source:/home/xiaohong/Projects/game_tilemap/src/Event.cpp
+	"Event.h"
+
+1528460093 /home/xiaohong/Projects/game_tilemap/include/Define.h
 

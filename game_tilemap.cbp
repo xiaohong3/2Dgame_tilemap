@@ -38,12 +38,24 @@
 		<Linker>
 			<Add option="-lSDL2 -lSDL2_image" />
 		</Linker>
+		<Unit filename="gfx/tiles.png" />
 		<Unit filename="include/Camera.h" />
+		<Unit filename="include/Define.h" />
+		<Unit filename="include/Event.h" />
 		<Unit filename="include/Game.h" />
 		<Unit filename="include/Map.h" />
+		<Unit filename="include/TextureManager.h" />
+		<Unit filename="include/Tile.h" />
+		<Unit filename="map/sample.map" />
 		<Unit filename="src/Camera.cpp" />
+		<Unit filename="src/Event.cpp" />
 		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Game_Cleanup.cpp" />
+		<Unit filename="src/Game_Init.cpp" />
+		<Unit filename="src/Game_Loop.cpp" />
+		<Unit filename="src/Game_Render.cpp" />
 		<Unit filename="src/Map.cpp" />
+		<Unit filename="src/TextureManager.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
