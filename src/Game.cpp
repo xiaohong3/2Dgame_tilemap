@@ -22,6 +22,25 @@ void Game::on_event(SDL_Event* event)
     Event::on_event(event);
 }
 
+void Game::on_key_down(SDL_Keycode sys)
+{
+    switch (sys)
+    {
+        case SDLK_LEFT:
+            Camera::camera_control.on_move(-5, 0);
+            break;
+        case SDLK_RIGHT:
+            Camera::camera_control.on_move(5, 0);
+            break;
+        case SDLK_UP:
+            Camera::camera_control.on_move(0, -5);
+            break;
+        case SDLK_DOWN:
+            Camera::camera_control.on_move(0, 5);
+            break;
+    }
+}
+
 int Game::on_execute()
 {
     if (!on_init())

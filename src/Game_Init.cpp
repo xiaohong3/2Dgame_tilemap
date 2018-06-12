@@ -30,5 +30,11 @@ bool Game::on_init()
         return false;
     }
 
+    if (map.on_load("map/sample.map", renderer))
+    {
+        std::cout << "Map loaded successfully." << std::endl;
+        Camera::camera_control = {0, 0, WIN_W, WIN_H, map.get_cols() * map.get_tsize() - WIN_W, map.get_rows() * map.get_tsize() - WIN_H};
+    }
+
     return true;
 }

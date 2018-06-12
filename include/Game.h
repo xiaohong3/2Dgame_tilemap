@@ -7,6 +7,9 @@
 #include "Define.h"
 #include <iostream>
 
+#include "Map.h"
+#include "Camera.h"
+
 class Game : public Event
 {
     public:
@@ -19,6 +22,7 @@ class Game : public Event
         void on_render();
         void on_cleanup();
         void on_exit();
+        void on_key_down(SDL_Keycode sym);
 
     protected:
 
@@ -26,6 +30,8 @@ class Game : public Event
         bool running;
         SDL_Window* window;
         SDL_Renderer* renderer;
+
+        Map map;
 };
 
 #endif // GAME_H

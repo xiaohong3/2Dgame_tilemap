@@ -17,5 +17,8 @@ void Event::on_event(SDL_Event* event)
         case SDL_QUIT:
             on_exit();
             break;
+        case SDL_KEYDOWN:
+            on_key_down(event->key.keysym.sym);
+            break;
     }
 }

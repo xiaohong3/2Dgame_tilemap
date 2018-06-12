@@ -10,6 +10,7 @@ class Event
         virtual ~Event();
         virtual void on_event(SDL_Event* event);
         virtual void on_exit() = 0;
+        virtual void on_key_down(SDL_Keycode sym) = 0;
 
     protected:
 

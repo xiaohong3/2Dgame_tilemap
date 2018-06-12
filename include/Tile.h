@@ -17,7 +17,6 @@ struct Tile
             tile_type_id = TILE_TYPE_NONE;
         }
 
-    private:
         int tile_id;
         int tile_type_id;
 };
