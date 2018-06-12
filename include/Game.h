@@ -31,7 +31,8 @@ class Game : public Event
         SDL_Window* window;
         SDL_Renderer* renderer;
 
-        Map map;
+        Map down_layer;
+        Map top_layer;
 };
 
 #endif // GAME_H

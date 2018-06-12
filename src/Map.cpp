@@ -95,11 +95,21 @@ void Map::on_render(SDL_Renderer* renderer)
 void Map::on_render(SDL_Renderer* renderer, int camera_x, int camera_y, int camera_w, int camera_h)
 {
     int start_col = camera_x / tsize;
-    int end_col = camera_w / tsize;
+    int end_col = start_col + camera_w / tsize;
     int start_row = camera_y / tsize;
-    int end_row = camera_h / tsize;
+    int end_row = start_row + camera_h / tsize;
     int offset_x = -camera_x + start_col * tsize;
     int offset_y = -camera_y + start_row * tsize;
+
+    if (end_col > cols - 1)
+    {
+        end_col = cols - 1;
+    }
+
+    if (end_row > rows - 1)
+    {
+        end_row = rows - 1;
+    }
 
     for (int i = start_col; i <= end_col; ++i)
     {

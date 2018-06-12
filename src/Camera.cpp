@@ -22,8 +22,24 @@ void Camera::on_move(int move_x, int move_y)
     x += move_x;
     y += move_y;
 
-    x = std::max(0, std::min(x, maxX));
-    y = std::max(0, std::min(y, maxY));
+//    x = std::max(0, std::min(x, maxX));
+//    y = std::max(0, std::min(y, maxY));
+    if(x < 0)
+    {
+        x = 0;
+    }
+    if(y < 0)
+    {
+        y = 0;
+    }
+    if(x > 768 - width)
+    {
+        x = 768 - width;
+    }
+    if(y > 768 - height)
+    {
+        y = 768 - height;
+    }
 }
 
 int Camera::get_x()
